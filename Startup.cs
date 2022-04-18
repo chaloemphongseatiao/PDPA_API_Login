@@ -45,7 +45,8 @@ namespace PDPA_API
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
 
-         //services.AddDefaultIdentity<AppSettingUser>().AddEntityFrameworkStores<DataPersonalContext>();
+            // services.AddDefaultIdentity<AppSettingUser>()
+            // .AddEntityFrameworkStores<DataPersonalContext>();
 
 
 
@@ -93,14 +94,14 @@ namespace PDPA_API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PDPA_API v1"));
             }
 
-            
+
             // Cors 
-             app.UseCors(builder =>
-            builder.WithOrigins(Configuration["AppSettings:Client_URL"].ToString())
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            
-            );
+            app.UseCors(builder =>
+           builder.WithOrigins(Configuration["AppSettings:Client_URL"].ToString())
+           .AllowAnyHeader()
+           .AllowAnyMethod()
+
+           );
 
             app.UseHttpsRedirection();
             app.UseRouting();

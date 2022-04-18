@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[5.0.15, )"
             },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[7.0.0-preview.3.22178.4, )"
+            },
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
               "version": "[6.17.0, )"
