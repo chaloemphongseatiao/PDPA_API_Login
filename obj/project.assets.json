@@ -7494,6 +7494,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.15",
       "Microsoft.IdentityModel.Logging >= 6.17.0",
+      "Microsoft.IdentityModel.Tokens >= 6.17.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "System.IdentityModel.Tokens.Jwt >= 6.17.0"
@@ -7566,6 +7567,10 @@
             "version": "[5.0.15, )"
           },
           "Microsoft.IdentityModel.Logging": {
+            "target": "Package",
+            "version": "[6.17.0, )"
+          },
+          "Microsoft.IdentityModel.Tokens": {
             "target": "Package",
             "version": "[6.17.0, )"
           },
